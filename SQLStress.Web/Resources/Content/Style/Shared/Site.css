@@ -1,0 +1,1130 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 0px;
+    /*font-family: 'open_sansregular' !important;*/
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding: 20px;
+}
+
+.centerTable{
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.home-link-section a:hover{
+    color: #ffd400;
+    text-decoration:none;
+}
+
+#contenido {
+    margin-top: 10px;
+}
+
+.m-fadeOut {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+}
+
+.popover-home{
+    background-color: rgba(34, 34, 34, 0.7);
+}
+
+.popover-arrow-home{
+    border-bottom-color: rgba(34,34,34,0.7);
+}
+
+.popover-content-home{
+    background-color: rgba(34,34,34,0.7);
+}
+
+/*----------------------------------------*/
+.popover {
+    background-color: white;
+}
+
+.popover-title {
+    font-size: 14px;
+    color: white;
+    background-color: rgb(72,72,72);
+    border-bottom: 1px solid gold;
+}
+
+.popover-content {
+    padding: 9px 14px;
+    max-width: 500px;
+}
+
+.popover.top > .arrow:after {
+    bottom: 1px;
+    margin-left: -10px;
+    content: " ";
+    border-top-color: white;
+    border-bottom-width: 0;
+}
+
+.popover.right > .arrow:after {
+    bottom: -10px;
+    left: 1px;
+    content: " ";
+    border-right-color: white;
+    border-left-width: 0;
+}
+
+.popover.bottom > .arrow:after {
+    top: 1px;
+    margin-left: -10px;
+    content: " ";
+    border-top-width: 0;
+    border-bottom-color: black;
+}
+
+.popover.left > .arrow:after {
+    right: 1px;
+    bottom: -10px;
+    content: " ";
+    border-right-width: 0;
+    border-left-color: white;
+    /*-----------------------------------------*/
+    /*---------------------------------- FONTS*/
+    /*@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'), url('../fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fjalla_oneregular';
+    src: url('../fonts/fjallaone-regular-webfont.woff2') format('woff2'), url('../fonts/fjallaone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;*/
+}
+
+/*---------------------END FONTS*/
+
+
+/************************************************* BEGIN STYLING GENERALS */
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    border-bottom: 2px solid #ffd400;
+}
+
+.container-steps {
+    width: 99%;
+}
+
+.footer-steps {
+    background-color: rgb(72,72,72);
+    width: 100%;
+    margin-top: 10%;
+    padding: 10px;
+    margin-bottom: 0px;
+    bottom: 0px;
+}
+
+.container-full {
+    width: 95%;
+    max-height: 100%;
+}
+
+.footer-button-ovflw {
+    padding-bottom: 5%;
+}
+
+.footer-ovflw {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.footer-ovflw-Panel-Sgmto-ctrl {
+    overflow: auto;
+    margin-top: 80px;
+    padding-bottom: 80px;
+}
+
+.Btn-back-Ey {
+    color: #ffd400 !important;
+}
+
+.navbar-toolsConfiguration {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e7e7e7;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    left: 0;
+    min-height: 70px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 1;
+}
+
+.navbar-tools {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e7e7e7;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    left: 0;
+    min-height: 70px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 1;
+}
+
+.navbar-tools-footer {
+    background-color: rgb(72,72,72);
+    border-top: 1px solid #e7e7e7;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    min-height: 70px;
+    /* margin-bottom: 20px; */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    z-index: 1;
+}
+
+.navbar-tools-search {
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.form-control-searh {
+    background-color: white;
+    width: 100% !important;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
+    vertical-align: middle;
+}
+
+.pager-container {
+    margin-top: 8px;
+}
+
+    .pager-container > .pager-info {
+        display: none;
+    }
+
+.form-control-ey {
+    border-style: none;
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: transparent;
+    background-image: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+    .form-control-ey:focus {
+        outline: 0;
+        border-bottom-color: #66afe9;
+    }
+
+    .form-control-ey[disabled], .form-control-ey[readonly] {
+        cursor: not-allowed;
+    }
+
+.control-label {
+    font-size: 10px;
+    margin: 0px;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+    .dropdown-submenu > .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -6px;
+        margin-left: -1px;
+        -webkit-border-radius: 0 6px 6px 6px;
+        -moz-border-radius: 0 6px 6px;
+        border-radius: 0 6px 6px 6px;
+    }
+
+    .dropdown-submenu:hover > .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-submenu > a:after {
+        display: block;
+        content: " ";
+        float: right;
+        width: 0;
+        height: 0;
+        border-color: transparent;
+        border-style: solid;
+        border-width: 5px 0 5px 5px;
+        border-left-color: #ccc;
+        margin-top: 5px;
+        margin-right: -10px;
+    }
+
+    .dropdown-submenu:hover > a:after {
+        border-left-color: #fff;
+    }
+
+    .dropdown-submenu.pull-left {
+        float: none;
+    }
+
+        .dropdown-submenu.pull-left > .dropdown-menu {
+            left: -100%;
+            margin-left: 10px;
+            -webkit-border-radius: 6px 0 6px 6px;
+            -moz-border-radius: 6px 0 6px 6px;
+            border-radius: 6px 0 6px 6px;
+        }
+
+/*---------footer style*/
+.Log-footer {
+    position: fixed;
+    bottom: 20px;
+    width: 40%;
+    margin: 0% 35% 0px 35%;
+}
+
+
+img.lg-FooterLogo {
+    margin: 0% 40% 0px 40%;
+    bottom: 1%;
+    width: 110px;
+    max-height: 20%;
+}
+
+.jumbotron p > a {
+    font-size: 16px !important;
+}
+
+.divider {
+    height: 1px;
+    background-color: #e8e8e8;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+.footer-brand {
+    width: 96%;
+    margin: auto;
+    text-align: center;
+    border-top: 1px solid #efefef;
+    font-size: 10px;
+}
+
+.navbar-dropdown-items {
+    margin: 2px;
+    background-color: rgb(56,56,56);
+}
+
+.dropdown ul li .selectors {
+    color: white;
+}
+
+    .dropdown ul li .selectors:hover {
+        background-color: black;
+        color: white;
+    }
+
+.dropdown ul li .btn-logOff:hover {
+    background-color: transparent;
+}
+
+/* ----Style errors data annotation formulary tags */
+.lg-displayError {
+    color: darkgray;
+    list-style: none;
+}
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+
+    .fileUpload input.upload {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        cursor: pointer;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        border-radius: 0px;
+        text-transform: uppercase;
+    }
+
+
+.btn-ey {
+    color: #333 !important;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+    .btn-file input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+
+.btn-ey-original {
+    background-color: #ffd400 !important;
+    border: none;
+}
+
+.no-padding {
+    padding: 0px !important;
+}
+
+.no-margin {
+    margin: 0px !important;
+}
+
+.btn-ey-round {
+    font-size: 34px;
+    width: 72px;
+    height: 72px;
+    border: 1px solid transparent;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    white-space: nowrap;
+    line-height: 1.42857143;
+    border-radius: 6pc !important;
+    -webkit-user-select: none;
+    padding-top: 12px;
+}
+
+.btn-ey-round-next {
+    position: fixed;
+    right: 23px;
+    bottom: 50%;
+    z-index: 998;
+    vertical-align: middle;
+    opacity: 0.5;
+}
+
+.btn-ey-round-login {
+    opacity: 1 !important;
+}
+
+.btn-ey-round:hover {
+    opacity: 1;
+}
+
+.btn-ey-round:focus, .btn-ey-round:active {
+    outline: 0 !important;
+}
+
+.btn-ey-original:hover {
+    background-color: #ffd400 !important;
+}
+
+.start-menu-sub-container {
+    background-color: darkgray;
+    height: 100vh;
+    margin-right: 1px;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.start-menu-sub-container-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    z-index: 1000;
+}
+
+.home-link-section > p {
+    margin-bottom: 25px;
+}
+
+.popover {
+    max-width: 100% !important;
+    z-index: 999 !important;
+}
+
+
+.load-img-in-line {
+    width: 32px;
+}
+
+.loading-panel {
+    left: 0;
+    top: 52px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    background-color: black;
+    position: fixed;
+    opacity: 0.84;
+}
+
+.loading-panel-tag {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    line-height: 45;
+}
+
+/****************************************  END styling Generals*/
+
+/************************** BEGIN no results partial page styling */
+.empty-results {
+    padding: 50px 15px 15px;
+}
+
+.empty-results-message {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 40px 110px 40px 20px;
+    width: 100%;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+    border: 1px solid #ccc;
+}
+
+
+/*----------------------------- END no results partial page  styling*/
+
+
+
+/************************************************* BEGIN STYLING THE LOGIN PAGE */
+
+.html {
+    background: url('../images/Fondo_login.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*--------cover image login*/
+.bg-coverImage {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+}
+
+    .bg-coverImage #Cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        min-width: 50%;
+        min-height: 50%;
+    }
+
+/*------------ form login panel*/
+.lg-body {
+    width: 100%;
+    height: 10px;
+    padding-top: 10%;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.Log-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    border: none;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+
+/*-----  title panels*/
+.Log-form-headingTittle {
+    letter-spacing: 5px;
+    color: #ffd400;
+    font-size: 100px;
+    text-align: center;
+    padding-top: 50px;
+    font-weight: bold;
+}
+
+.Log-form-control-ey {
+    height: 46px !important;
+}
+
+.Log-form-rounded {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.Lg-icon {
+    color: rgb(169,169,169);
+    font-size: 20px;
+}
+
+.left-inner-addon {
+    position: relative;
+}
+
+    .left-inner-addon input {
+        padding-left: 30px;
+    }
+
+    .left-inner-addon i {
+        position: absolute;
+        padding: 10px 12px;
+        pointer-events: none;
+    }
+
+.right-inner-addon {
+    position: relative;
+}
+
+    .right-inner-addon input {
+        padding-right: 30px;
+    }
+
+    .right-inner-addon i {
+        position: absolute;
+        right: 0px;
+        padding: 10px 12px;
+        pointer-events: none;
+    }
+
+
+.panel .panel-heading.Log-form-headingTittle, .panel .panel-heading.Log-form-headingSubTittle {
+    background-color: transparent;
+    text-transform: uppercase;
+    border: none;
+}
+
+.panel .panel-heading.Log-form-headingTittle {
+    letter-spacing: 5px;
+    color: gold;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.Log-form-headingSubTittle {
+    color: white;
+    letter-spacing: 0px;
+    font-weight: normal;
+}
+
+/*reset*/
+.rst-mainContainer {
+    margin-top: 5%;
+}
+
+.rst-panel {
+    background-color: white;
+    border: none;
+    padding: 40px;
+    border-color: yellow;
+}
+
+.rst-panelHeading {
+    background-color: red;
+    border-color: gold;
+}
+
+
+.rst-inputs {
+    background-color: white;
+    color: darkgrey;
+}
+
+.circleBase {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: lightgray;
+}
+
+/*------vertical line effect*/
+.vertical1 {
+    transform: rotate(90deg);
+    margin-top: 50%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    border-top: 7px solid white;
+}
+
+.welcomeLoginDesktop {
+    color: white;
+    padding-bottom: 40px;
+    bottom: 75%;
+    position: absolute;
+}
+
+.error-message-login {
+    font-size: 14px;
+    color: #ffd400;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.validation-summary-errors > ul {
+    list-style-type: none;
+}
+
+/****************************************  END styling Login*/
+
+/*-----------------------------------------REPORTS-----------------------------------------*/
+.vertical-text {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 30px;
+}
+
+.reports-filter-menu {
+    height: 900PX;
+    background-color: #F2F2F2;
+    padding-top: 50px;
+}
+
+.reports-icon-menu {
+    font-size: 30px;
+    color: #333;
+    margin-top: -56px;
+    margin-left: 6px;
+}
+
+.reports-icon-menu2 {
+    font-size: 30px;
+    color: #333;
+    margin-left: 6px;
+    margin-left: 229px;
+    float: right;
+    margin-top: -33px;
+}
+
+#menu-hide {
+    width: 77PX;
+    height: 900px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.reports-text-menu {
+    height: 50%;
+    color: #9d9d9d;
+}
+
+.empty-results-message2 {
+    text-align: center;
+    margin-top: 7%;
+    color: gray;
+}
+/*---------------------------------------------END REPORTS---------------------------------------*/
+
+
+/************************************************ BEGING MODALS STYLES*/
+
+.mdl-grnd {
+    background-color: rgb(56,56,56);
+    color: white;
+    border: none;
+}
+
+.mdl-Icon {
+    font-size: 50px;
+    color: gold;
+}
+
+.mdl-btn {
+    background-color: rgb(56,56,56);
+    color: white;
+    border: none;
+}
+
+.mdl-txt {
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 20px;
+}
+/*************************************************************END modals style*/
+
+
+/*********************************************** UPDATE AND EXITS VIEWS*/
+
+/*----- card headers update and exits*/
+
+.main-Container-updates-exits {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 20px;
+    background-color: white;
+    position: absolute;
+}
+
+.container-cards {
+    width: 100%;
+    padding: 0px;
+}
+
+.card-header {
+    border: 1px solid lightgray;
+    padding: 10px;
+    background-color: whitesmoke;
+    text-align: left;
+}
+
+.card-block {
+    border: 1px thin lightgray;
+    padding: 20px;
+    background-color: white;
+}
+
+.card-block-lg {
+    border: 1px thin lightgray;
+    padding: 20px;
+    background-color: white;
+}
+
+.btn-ey-default {
+    padding: 12px;
+    text-transform: uppercase;
+    border-radius: 0px;
+    font-size: 14px;
+    background-color: gold;
+    color: black;
+    border-color: none;
+}
+
+.btn-ey-default-grey-sm {
+    padding: 8px;
+    text-transform: uppercase;
+    border-radius: 0px;
+    font-size: 12px;
+    background-color: grey;
+    color: whitesmoke;
+    border-color: none;
+    border: none;
+}
+
+    .btn-ey-default-grey-sm:hover {
+        background-color: rgb(56,56,56);
+        color: whitesmoke;
+    }
+
+
+/***********************************END UPDATE AND EXITS VIEWS*/
+
+
+
+
+/*************************************************************************  GENERAL MEDIA QUERIES*/
+
+/* Custom */
+@media only screen and (min-width : 320px) {
+
+    .welcomeLoginDesktop {
+        display: none;
+    }
+
+    .vertical1 {
+        display: none;
+    }
+
+    .panel .panel-heading.Log-form-headingTittle {
+        font-size: 40px;
+    }
+
+    .error-message-info {
+        font-size: 15px;
+        color: white;
+        width: 50%;
+        margin: 10% auto;
+        font-weight: lighter;
+    }
+
+    .error-message-mail {
+        font-size: 15px;
+    }
+
+    .error-title {
+        color: white;
+        font-weight: bold;
+        margin: 0% auto 2% auto;
+        font-size: 18px;
+    }
+
+    .Icon-error {
+        margin-top: 30px;
+    }
+
+    .Log-footer {
+        position: fixed;
+        bottom: 20px;
+        width: 70%;
+        margin: 0% 15% 0px 15%;
+    }
+}
+
+/*Extra Small Devices, Phones*/
+@media only screen and (min-width : 480px) {
+
+    .Log-footer {
+        position: fixed;
+        bottom: 20px;
+        width: 70%;
+        margin: 0% 15% 0px 15%;
+    }
+}
+
+/*Small Devices, Tablets*/
+@media only screen and (min-width : 768px) {
+
+
+    .Icon-error {
+        margin-top: 0px;
+    }
+
+    .error-title {
+        color: white;
+        font-weight: bold;
+        margin: 0% auto 2% auto;
+        font-size: 30px;
+    }
+
+    .error-message-info {
+        font-size: 25px;
+        color: white;
+        width: 50%;
+        margin: 0 auto;
+        font-weight: lighter;
+    }
+
+    .error-message-mail {
+        font-size: 25px;
+    }
+
+    .Log-footer {
+        position: fixed;
+        bottom: 20px;
+        width: 50%;
+        margin: 0% 25% 0px 25%;
+    }
+}
+
+@media only screen and (min-width : 992px) {
+    .welcomeLoginDesktop {
+        display: block;
+    }
+
+    .panel .panel-heading.Log-form-headingTittle {
+        font-size: 70px;
+    }
+
+
+    .vertical1 {
+        display: block;
+    }
+}
+
+@media only screen and (min-width : 1200px) {
+    /*.Log-form-container{
+        margin-left: 112px;
+    }*/
+    .Log-form-headingTittle {
+        padding-top: 50px;
+    }
+}
+
+@media only screen and (min-width : 1352px) {
+}
+
+/* -------------------------------------------   Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    .Log-footer {
+        display: none;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .Log-footer {
+        display: none;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .Log-footer {
+        display: none;
+    }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .Log-footer {
+        display: none;
+    }
+}
+/********************************************************************************************** END media queries*/
+
+
+
+.form-group input[type="checkbox"] {
+    display: none;
+}
+
+    .form-group input[type="checkbox"] + .btn-group > label span {
+        width: 20px;
+    }
+
+        .form-group input[type="checkbox"] + .btn-group > label span:first-child {
+            display: none;
+        }
+
+        .form-group input[type="checkbox"] + .btn-group > label span:last-child {
+            display: inline-block;
+        }
+
+    .form-group input[type="checkbox"]:checked + .btn-group > label span:first-child {
+        display: inline-block;
+    }
+
+    .form-group input[type="checkbox"]:checked + .btn-group > label span:last-child {
+        display: none;
+    }
+
+
+.container-height {
+    height: 100%;
+}
+
+.tree ul {
+    display: none;
+    margin: 4px auto;
+    margin-left: 6px;
+    border-left: 1px dashed #dfdfdf;
+}
+
+
+.tree li {
+    padding: 6px 9px;
+    list-style: none;
+    cursor: pointer;
+    vertical-align: middle;
+    color: white;
+}
+
+    .tree li:first-child {
+        border-radius: 3px 3px 0 0;
+    }
+
+    .tree li:last-child {
+        border-radius: 0 0 3px 3px;
+    }
+
+.tree .active,
+.tree .active li {
+    background: #efefef;
+}
+
+.tree label {
+    cursor: pointer;
+}
+
+.tree input[type=checkbox] {
+    margin: -2px 6px 0 0px;
+}
+
+.has > label {
+    color: #fff;
+}
+
+.tree .total {
+    color: #ffd400;
+}
+
+.tree input[type=checkbox] {
+    display: inline-block;
+}
+
+#partialServiceLine {
+    position: relative;
+    text-align: initial;
+    background-color: rgb(25,25,25);
+    padding: 10px;
+    height: 900px;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    overflow-y: scroll;
+}
+
+
+    #partialServiceLine h2 {
+        color: #ffd400;
+        margin: 15px;
+    }
+
+/*------------------------------------------------------- test unit */
+
+
+@media screen and (min-width: 1400px) {
+}
+
+@media screen and (min-width: 1600px) {
+    .card-block {
+        border: 1px thin lightgray;
+        padding: 20px;
+        background-color: white;
+        /*height:700px;*/
+    }
+}
+
+@media screen and (min-width: 1900px) {
+}

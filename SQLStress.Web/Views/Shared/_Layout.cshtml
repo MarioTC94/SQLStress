@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Vendors/css")
+    @Styles.Render("~/Shared/css")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <input type="button" value="Open Success Modal" id="succesModal" />
+                <input type="button" value="Open Warning  Modal" id="warningModal" />
+                <input type="button" value="Open Danger Modal" id="dangerModal" />
+                <input type="button" value="Open Option Modal" id="optionModal" />
+
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @*
+        ALL PARTIAL VIEWS
+    *@
+
+    @{ Html.RenderPartial("~/Views/Shared/Modals/_ModalSuccess.cshtml"); }
+    @{ Html.RenderPartial("~/Views/Shared/Modals/_ModalOptional.cshtml"); }
+    @{ Html.RenderPartial("~/Views/Shared/Modals/_ModalDanger.cshtml"); }
+    @{ Html.RenderPartial("~/Views/Shared/Modals/_ModalWarning.cshtml"); }
+
+    @Scripts.Render("~/Vendors/js")
+    @RenderSection("scripts", required: false)
+
+    <script src="~/Resources/Content/Script/Helpers/Commons.script.js"></script>
+    <script src="~/Resources/Content/Script/Helpers/Generic.script.js"></script>
+    <script src="~/Resources/Content/Script/Helpers/Modal.script.js"></script>
+    <script>
+        $('#succesModal').on('click', function () {
+            Modal.SuccessModal("Este es un modal de éxito");
+        });
+
+        $('#warningModal').on('click', function () {
+            Modal.WarningModal("Este es un modal de alerta");
+        });
+
+        $('#dangerModal').on('click', function () {
+            Modal.DangerModal("Este es un modal de error");
+        });
+        $('#optionModal').on('click', function () {
+            Modal.OptionModal(
+                "Este es un modal de opcional, ¿Cuál desea abrir ahora?",
+                "Abrir Éxito",
+                "Abrir Error",
+                function () {
+                    Modal.SuccessModal("Has abierto el modal de success");
+                },
+                function () {
+                    Modal.DangerModal("Has abierto el modal de Error");
+                });
+        });
+    </script>
+</body>
+</html>
