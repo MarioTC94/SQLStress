@@ -250,6 +250,8 @@
     <Content Include="Views\Shared\NavBar\_NavPaginaMenu.cshtml" />
     <Content Include="Views\Request\CreateRequest.cshtml" />
     <Content Include="Views\Request\ShowLastReport.cshtml" />
+    <Content Include="Views\Shared\_LayoutPagMenu.cshtml" />
+    <Content Include="Views\Shared\Footer\_FooterPrincipal.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

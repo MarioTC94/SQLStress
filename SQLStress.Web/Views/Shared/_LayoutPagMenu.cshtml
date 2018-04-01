@@ -1,0 +1,22 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>SQL Stress Menú Pricipal</title>
+	@Styles.Render("~/Vendors/css")
+	@Styles.Render("~/Shared/css")
+	@RenderSection("styles", required: false)
+</head>
+<body>
+	@{ Html.RenderPartial("~/Views/Shared/NavBar/_NavPaginaMenu.cshtml");}
+	<div>
+
+	</div>
+	@{ Html.RenderPartial("~/Views/Shared/Footer/_FooterPrincipal.cshtml");}
+</body>
+</html>
