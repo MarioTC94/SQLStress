@@ -1,0 +1,15 @@
+﻿@model SQLStress.Core.ViewModels.InfoRequestModel
+@{
+    ViewBag.Title = "ShowLastReport";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ShowLastReport</h2>
+
+<p><h4>Cantidad de consultas al servidor: </h4>@Model.CantRequest</p>
+<p><h4>Cantidad de hilos de ejecución </h4>@Model.CantThreads</p>
+<p><h4>Fecha de inicio de la prueba: </h4>@Model.InitialDateRequest</p>
+<p><h4>Fecha final de la prueba: </h4>@Model.FinishDateRequest</p>
+<p><h4>Duracion de la prueba: </h4>@Model.DurationRequest.ToString()</p>
+
+

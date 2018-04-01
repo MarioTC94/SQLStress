@@ -8,6 +8,6 @@ using System.Threading.Tasks;
 namespace SQLStress.Business.Interfaces {
 	public interface lReport {
 
-		InfoRequestModel GetInfoOfLastRequest();
+		
 	}
 }

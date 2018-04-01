@@ -22,6 +22,8 @@ namespace SQLStress.Web
              */
 
 			unityContainer.RegisterType<ISqlCall, SqlCallBL>();
+			unityContainer.RegisterType<lReport, ReportBL>();
+
 
             DependencyResolver.SetResolver(new UnityDependencyResolver(unityContainer));
         }

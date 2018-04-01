@@ -168,6 +168,7 @@
     <Compile Include="Commons\Utils\ViewExtensions.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RequestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -239,13 +240,16 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Error\MaliciusRequest.cshtml" />
+    <Content Include="Views\Shared\NavBar\_NavPaginaPrincipal.cshtml" />
+    <Content Include="Views\Shared\NavBar\_NavPaginaMenu.cshtml" />
+    <Content Include="Views\Request\CreateRequest.cshtml" />
+    <Content Include="Views\Request\ShowLastReport.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -293,7 +297,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>8109</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
