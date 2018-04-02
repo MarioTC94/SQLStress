@@ -247,11 +247,11 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Error\MaliciusRequest.cshtml" />
     <Content Include="Views\Shared\NavBar\_NavPaginaPrincipal.cshtml" />
-    <Content Include="Views\Shared\NavBar\_NavPaginaMenu.cshtml" />
     <Content Include="Views\Request\CreateRequest.cshtml" />
     <Content Include="Views\Request\ShowLastReport.cshtml" />
     <Content Include="Views\Shared\_LayoutPagMenu.cshtml" />
     <Content Include="Views\Shared\Footer\_FooterPrincipal.cshtml" />
+    <Content Include="Views\Shared\_LayoutReporte.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

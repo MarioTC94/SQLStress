@@ -18,9 +18,9 @@ namespace SQLStress.Web.Controllers
 
 		[HttpPost]
 		public JsonResult CreateRequest(InfoRequestModel model) {
-				model.InitialDateRequest = DateTime.Now;
-				//_ManageRequestServer(model);
-				model.FinishDateRequest = DateTime.Now;
+				//model.InitialDateRequest = DateTime.Now;
+				////_ManageRequestServer(model);
+				//model.FinishDateRequest = DateTime.Now;
 				return Json(model);
 		}
 	

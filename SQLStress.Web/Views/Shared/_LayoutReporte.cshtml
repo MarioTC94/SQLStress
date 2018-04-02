@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Reporte de Prueba</title>
+	@Styles.Render("~/Vendors/css")
+	@Styles.Render("~/Shared/css")
+	@RenderSection("styles", required: false)
+</head>
+<body>
+	@model SQLStress.Core.ViewModels.InfoRequestModel
+	@RenderBody()
+	@{ Html.RenderPartial("~/Views/Shared/NavBar/_NavPaginaPrincipal.cshtml");}
+	<div class="container">
+		<div class="row justify-content-md-start">
+			<div class="col-8" style="padding:25px; left:80px">
+				<p><h4> Reporte de prueba de la base de datos </h4>@Model.DataBaseName</p>
+				<form>
+					<div class="form-group">
+						<p><h4>Cantidad de consultas al servidor: </h4>@Model.CantRequest</p>
+					</div>
+					<div class="form-group">
+						<p><h4>Cantidad de hilos de ejecución </h4>@Model.CantThreads</p>
+					</div>
+					<div class="form-group">
+						<p><h4>Fecha Inicio de la prueba </h4>@Model.InitialDateRequest</p>
+					</div>
+					<div class="form-group">
+						<p><h4>Fecha Final de la prueba: </h4>@Model.FinishDateRequest</p>
+					</div>
+					<div class="form-group">
+						<p><h4>Duracion de la prueba: </h4>@Model.DurationRequest.ToString()</p>
+					</div>
+					<div class="form-group">
+						<p><h4>Cantidad de consultas efectuadas</h4>@Model.SuccessRequest</p>
+					</div>
+					<div class="form-group">
+						<p><h4>Cantidad de consultas no efectuadas: </h4>@Model.FailRequest</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	@{ Html.RenderPartial("~/Views/Shared/Footer/_FooterPrincipal.cshtml");}
+</body>
+</html>
