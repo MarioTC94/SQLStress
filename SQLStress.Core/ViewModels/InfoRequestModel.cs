@@ -14,7 +14,7 @@ namespace SQLStress.Core.ViewModels {
 		public TimeSpan DurationRequest { get; set; }
 		public int SuccessRequest { get; set; }
 		public int FailRequest { get; set; }
-		public String  TableName { get; set; }
+		public String TableName { get; set; }
 		public String DataBaseName { get; set; }
 	}
 }

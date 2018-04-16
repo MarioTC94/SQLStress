@@ -10,19 +10,17 @@ namespace SQLStress.Web.Controllers
     public class RequestController : Controller
     {
 
-
-		[HttpGet]
 		public ViewResult CreateRequest() {
 			return View();
 		}
 
-		[HttpPost]
-		public JsonResult CreateRequest(InfoRequestModel model) {
-				//model.InitialDateRequest = DateTime.Now;
-				////_ManageRequestServer(model);
-				//model.FinishDateRequest = DateTime.Now;
-				return Json(model);
+		public ViewResult ShowLastReport() {
+			return View();
 		}
-	
+		//public JsonResult CreateRequest(InfoRequestModel model) {
+		//		//model.InitialDateRequest = DateTime.Now;
+		//		////_ManageRequestServer(model);
+		//		//model.FinishDateRequest = DateTime.Now;
+		//		return Json(model);
+	}
     }
-}

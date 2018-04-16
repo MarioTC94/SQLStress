@@ -9,37 +9,58 @@
 	@RenderSection("styles", required: false)
 </head>
 <body>
-	@model SQLStress.Core.ViewModels.InfoRequestModel
+	@*@model SQLStress.Core.ViewModels.InfoRequestModel*@
 	@RenderBody()
 	@{ Html.RenderPartial("~/Views/Shared/NavBar/_NavPaginaPrincipal.cshtml");}
-	<div class="container">
-		<div class="row justify-content-md-start">
-			<div class="col-8" style="padding:25px; left:80px">
-				<p><h4> Reporte de prueba de la base de datos </h4>@Model.DataBaseName</p>
-				<form>
-					<div class="form-group">
-						<p><h4>Cantidad de consultas al servidor: </h4>@Model.CantRequest</p>
+	<div class="form-group form-group-sm col-sm-6">
+		<div class="row">
+			<label for="ReporteBase" class="col-sm-6 col-form-label" style="font-size: 25px; padding:10px;"> Reporte de la base de datos </label>
+		</div>
+	</div>
+	<form class="form-horizontal">
+		<div class="container">
+			<div class="row">
+				<div class="form-group form-group-sm col-sm-6">
+					<div class="row">
+						<label for="ConsultasServidor" class="col-sm-6 col-form-label" style="font-size: 17px;"> Cantidad de consultas al servidor:</label>
 					</div>
-					<div class="form-group">
-						<p><h4>Cantidad de hilos de ejecución </h4>@Model.CantThreads</p>
+				</div>
+				<div class="form-group form-group-sm col-sm-6">
+					<div class="row">
+						<label for="HilosEjec" class="col-sm-6 col-form-label" style="font-size: 17px;"> Cantidad de hilos de ejecución: </label>
 					</div>
-					<div class="form-group">
-						<p><h4>Fecha Inicio de la prueba </h4>@Model.InitialDateRequest</p>
+				</div>
+				<div class="form-group form-group-sm col-sm-6">
+					<div class="row">
+						<label for="FechaInic" class="col-sm-6 col-form-label" style="font-size: 17px;">Fecha Inicio de la prueba:</label>
 					</div>
-					<div class="form-group">
-						<p><h4>Fecha Final de la prueba: </h4>@Model.FinishDateRequest</p>
+				</div>
+				<div class="form-group form-group-sm col-sm-6">
+					<div class="row">
+						<label for="FechaFin" class="col-sm-6 col-form-label" style="font-size: 17px;">Fecha Final de la prueba:</label>
 					</div>
-					<div class="form-group">
-						<p><h4>Duracion de la prueba: </h4>@Model.DurationRequest.ToString()</p>
+				</div>
+				<div class="form-group form-group-sm col-sm-6">
+					<div class="row">
+						<label for="DuraPrueba" class="col-sm-6 col-form-label" style="font-size: 17px;"> Duración de la prueba:</label>
 					</div>
-					<div class="form-group">
-						<p><h4>Cantidad de consultas efectuadas</h4>@Model.SuccessRequest</p>
+				</div>
+				<div class="form-group form-group-sm col-sm-6">
+					<div class="row">
+						<label for="DuraPrueba" class="col-sm-6 col-form-label" style="font-size: 17px;"> Cantidad de consultas efectuadas:</label>
 					</div>
-					<div class="form-group">
-						<p><h4>Cantidad de consultas no efectuadas: </h4>@Model.FailRequest</p>
+				</div>
+				<div class="form-group form-group-sm col-sm-6">
+					<div class="row">
+						<label for="DuraPrueba" class="col-sm-6 col-form-label" style="font-size: 17px;"> Cantidad de consultas no efectuadas:</label>
 					</div>
-				</form>
+				</div>
 			</div>
+		</div>
+	</form>
+	<div class="form-group form-group-sm col-sm-6">
+		<div class="form-group">
+			<button type="submit" class="btn btn-primary" style="position:absolute; top:0; right:-270px"> Salir del Reporte</button>
 		</div>
 	</div>
 	@{ Html.RenderPartial("~/Views/Shared/Footer/_FooterPrincipal.cshtml");}

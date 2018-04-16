@@ -41,11 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\ConnectionCredentialModel.cs" />
+    <Compile Include="ViewModels\CredencialesConexion.cs" />
     <Compile Include="ViewModels\InfoRequestModel.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ExceptionModels\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
