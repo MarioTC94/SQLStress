@@ -10,35 +10,23 @@
 </head>
 <body>
 	@{ Html.RenderPartial("~/Views/Shared/NavBar/_NavPaginaPrincipal.cshtml");}
+
+<div id="loading">
+		<div id="loading-center">
+			<div id="loading-center-absolute">
+				<div class="object" id="object_four"></div>
+				<div class="object" id="object_three"></div>
+				<div class="object" id="object_two"></div>
+				<div class="object" id="object_one"></div>
+			</div>
+		</div>
+	</div>
+
+
 	<div class="container body-content">
 		@RenderBody()
-    </div>
+	</div>
 
-<div class="container">
-        <div class="card h-100 w-100" style="max-width: 35rem; max-height:0rem; margin: 0 auto; float: none;  margin-bottom: 0px;">
-            <div class="card-header", style="background-color:dodgerblue; font-size=5ex; font-weight:bold;"><h3>Conectar Servidor</h3></div>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col">Tipo de Servidor</div>
-                    <div class="col"><input typle="text"/></div>
-                    <div class="w-100"></div>
-                    <p></p>
-                    <div class="col">Nombre del Servidor</div>
-                    <div class="col"><input typle="text"/></div>
-                    <div class="w-100"></div>
-                    <p></p>
-                    <div class="col">Hostname:Port</div>
-                    <div class="col"><input typle="text"/></div>
-                    <div class="w-100"></div>                    
-                </div>
-            </div>
-            <div class="card-footer">
-                <a href="#" class="btn btn-primary" , style="background-color:dodgerblue">Conectar</a>
-                <a href="#" class="btn btn-primary" , style="background-color:dodgerblue">Cancelar</a>
-            </div>
-        </div>
-</div>
-         
 	@{ Html.RenderPartial("~/Views/Shared/Footer/_FooterPrincipal.cshtml");}
 
 	@*
@@ -51,17 +39,9 @@
 
 	@Scripts.Render("~/Vendors/js")
 	@RenderSection("scripts", required: false)
+
 	<script src="~/Resources/Content/Script/Helpers/Commons.script.js"></script>
 	<script src="~/Resources/Content/Script/Helpers/Generic.script.js"></script>
 	<script src="~/Resources/Content/Script/Helpers/Modal.script.js"></script>
-	<script>
-
-		function VerificarConexion() {
-			$.ajax({
-				type: "POST",
-				url: ""});
-		}
-
-	</script>
 </body>
 </html>

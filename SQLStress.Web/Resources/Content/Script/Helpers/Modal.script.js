@@ -33,7 +33,7 @@ var Modal = (function () {
         SuccessModal: function (message) {
             $('#textContainerSuccess').empty().text(message);
             $('[data-remodal-id=modalSuccess]').remodal().open();
-        },
+		},
 
         /**
          * Open a Optional modal with two possible options

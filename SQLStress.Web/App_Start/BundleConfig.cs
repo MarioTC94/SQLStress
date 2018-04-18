@@ -12,8 +12,11 @@ namespace SQLStress.Web
                 "~/Resources/Vendors/js/jquery-3.3.1.min.js", 
                 "~/Resources/Vendors/js/tether.min.js",
                 "~/Resources/Vendors/js/bootstrap.min.js",
-                "~/Resources/Vendors/js/remodal.min.js"
-                ));
+                "~/Resources/Vendors/js/remodal.min.js",
+				"~/Resources/Vendors/js/jquery.unbtrusive-ajax.js",
+				"~/Resources/Vendors/js/jquery.validate.min.js",
+				"~/Resources/Vendors/js/jquery.validate.unobtruive.min.js"
+				));
 
             bundles.Add(new StyleBundle("~/Vendors/css").Include(
                 "~/Resources/Vendors/css/bootstrap.min.css",

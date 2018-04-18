@@ -40,9 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ManageConnectionString.cs" />
+    <Compile Include="Repositories\SQLRepository.cs" />
     <Compile Include="SQLDatabase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\SQLStress.Core\SQLStress.Core.csproj">
+      <Project>{cbb0b97d-ae38-496a-be8a-f946b694446e}</Project>
+      <Name>SQLStress.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

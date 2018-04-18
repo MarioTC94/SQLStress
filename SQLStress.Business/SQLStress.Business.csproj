@@ -40,8 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Consultas.cs" />
-    <Compile Include="EnviarConexion.cs" />
+    <Compile Include="Helpers\ExtensionHelper.cs" />
+    <Compile Include="Interfaces\ISQL.cs" />
+    <Compile Include="SQLBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

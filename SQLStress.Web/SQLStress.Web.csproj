@@ -162,6 +162,7 @@
     <Compile Include="Commons\Security\BillingWebAppAuthorize.cs" />
     <Compile Include="Commons\Security\Membership.cs" />
     <Compile Include="Commons\Security\SecurityFilterAccess.cs" />
+    <Compile Include="Commons\Utils\DropDownHelper.cs" />
     <Compile Include="Commons\Utils\JsonHelper.cs" />
     <Compile Include="Commons\Utils\SessionManager.cs" />
     <Compile Include="Commons\Utils\SqlConnectionSessionManager.cs" />
@@ -180,6 +181,8 @@
     <Content Include="Resources\Content\Script\Helpers\Commons.script.js" />
     <Content Include="Resources\Content\Script\Helpers\Generic.script.js" />
     <Content Include="Resources\Content\Script\Helpers\Modal.script.js" />
+    <Content Include="Resources\Content\Script\Home\Index.js" />
+    <Content Include="Resources\Content\Script\Request\Request.js" />
     <Content Include="Resources\Content\Style\Shared\Site.css" />
     <Content Include="Resources\Vendors\css\animate.css" />
     <Content Include="Resources\Vendors\css\bootstrap-datepicker.css" />
@@ -212,6 +215,7 @@
     <Content Include="Resources\Vendors\js\fontawesome.js" />
     <Content Include="Resources\Vendors\js\fontawesome.min.js" />
     <Content Include="Resources\Vendors\js\jquery-3.3.1.min.js" />
+    <Content Include="Resources\Vendors\js\jquery.unbtrusive-ajax.js" />
     <Content Include="Resources\Vendors\js\jquery.validate.js" />
     <Content Include="Resources\Vendors\js\jquery.validate.min.js" />
     <Content Include="Resources\Vendors\js\moment.js" />
@@ -250,6 +254,7 @@
     <Content Include="Views\Shared\_LayoutPagMenu.cshtml" />
     <Content Include="Views\Shared\Footer\_FooterPrincipal.cshtml" />
     <Content Include="Views\Shared\_LayoutReporte.cshtml" />
+    <Content Include="Resources\Vendors\js\jquery.validate.unobtruive.min.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

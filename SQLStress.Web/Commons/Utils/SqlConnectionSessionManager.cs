@@ -11,14 +11,15 @@ namespace SQLStress.Web.Commons.Utils
     {
         private static SqlConnectionStringBuilder ConnecitonStringBuilder;
 
-        public static void SaveConnection(CredencialesConexion model)
+        public static void SaveConnection(ConecctionCredential model)
         {
             HttpContext.Current.Session["StringConnection"] = model;
         }
 
-        public CredencialesConexion GetActualConnectionCredentials()
+        public static ConecctionCredential GetActualConnectionCredentials()
         {
-            return HttpContext.Current.Session["StringConnection"] as CredencialesConexion;
+            return HttpContext.Current.Session["StringConnection"] as ConecctionCredential;
         }
-    }
+	
+	}
 }

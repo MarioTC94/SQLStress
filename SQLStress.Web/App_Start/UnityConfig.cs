@@ -1,5 +1,6 @@
+
+using SQLStress.Business;
 using SQLStress.Business.Interfaces;
-using SQLStress.Business.Logic;
 using System;
 using System.Web.Mvc;
 using Unity;
@@ -14,18 +15,14 @@ namespace SQLStress.Web
     {
         public static void RegisterUnity()
         {
-            var unityContainer = new UnityContainer();
-
-			/*
-             * HERE YOU REGISTER YOUR DEPENDENCY INJETION CLASSES AND INTERFACES LIKE
-             * unityContainer.RegisterType<IInterface, class>();
-             */
-
-			unityContainer.RegisterType<ISqlCall, SqlCallBL>();
-			unityContainer.RegisterType<lReport, ReportBL>();
+            var Container = new UnityContainer();
 
 
-            DependencyResolver.SetResolver(new UnityDependencyResolver(unityContainer));
+
+
+			Container.RegisterType<ISQL, SQLBL>();
+
+            DependencyResolver.SetResolver(new UnityDependencyResolver(Container));
         }
     }
 }

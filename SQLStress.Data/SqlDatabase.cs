@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SQLStress.Core.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -7,15 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace SQLStress.Data {
-	public class SQLDatabase {
+	public class SQLDatabase : IDisposable {
 
 		public SqlConnection oCN { get; }
-		public String Conexion { get; set; }
-		public string BD { get; set; }
 
-		public SQLDatabase() {
-
-			oCN = new SqlConnection("Data Source=" + Conexion + "\\SQL2016;Initial Catalog=" + BD + ";Integrated Security=True");
+		public SQLDatabase(ConecctionCredential model) {
+			oCN = new SqlConnection(ManageConnectionString.GetConnectionString(model));
 		}
 
 		public bool OpenConnection() {
@@ -23,7 +21,8 @@ namespace SQLStress.Data {
 				oCN.Open();
 				return true;
 			} catch (Exception ex) {
-				throw new Exception("No se puede abrir la conexión con la base de datos", ex);
+				//throw new Exception("No se puede abrir la conexión con la base de datos", ex);
+				return false;
 			}
 		}
 
@@ -72,6 +71,10 @@ namespace SQLStress.Data {
 			} catch (Exception ex) {
 				throw new Exception("No se pudo obtener la información deseada", ex);
 			}
+		}
+
+		public void Dispose() {
+			this.oCN?.Dispose();
 		}
 	}
 }
